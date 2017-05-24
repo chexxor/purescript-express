@@ -84,5 +84,5 @@ newtype CookieOptions = CookieOptions
     }
 
 instance defaultCookieOptions :: Default CookieOptions where
-    def = CookieOptions { maxAge: oneYear, signed: false, path: "/", domain: ".rentablegear.com", httpOnly: true, secure: false  }
+    def = CookieOptions { maxAge: oneYear, signed: false, path: "/", domain: ".example.com", httpOnly: true, secure: false  }
       where oneYear = 365 * 24 * 60 * 60 * 1000
